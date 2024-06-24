@@ -1,12 +1,90 @@
 <!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="./styles/global.css">
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Lexend+Deca:wght@100..900&display=swap"
+      rel="stylesheet"
+    />
+
+    <link rel="stylesheet" href="./styles/global.css" />
+    <link rel="stylesheet" href="./styles/cadastro.css" />
+
+    <script src="./js/darkMode.js"></script>
+
     <title>Cadastro</title>
-</head>
-<body class="dark_mode">
-    
-</body>
+  </head>
+  <body class="dark_mode">
+    <main>
+      <div id="div_main_form">
+        <h1>Criar sua conta</h1>
+        <div id="icons_container">
+          <img
+            class="icone"
+            src="./public/icons_google.svg"
+            alt="icone do google"
+          />
+          <img
+            class="icone"
+            src="./public/social_facebook.svg"
+            alt="icone do face"
+          />
+          <img
+            class="icone"
+            src="./public/social_linkedin.svg"
+            alt="icone do linkedin"
+          />
+        </div>
+        <p>Ou use uma das suas redes sociais para se registrar</p>
+
+        <form action="">
+          <input type="text" name="name" id="name" placeholder="Nome" />
+          <input
+            type="text"
+            name="secund_name"
+            id="secund_name"
+            placeholder="Sobrenome"
+          />
+          <input type="email" name="email" id="email" placeholder="e-mail" />
+          <input type="tel" name="tel" id="telefone" placeholder="Telefone(com DDD) " />
+          <input
+            type="password"
+            name="password"
+            id="password"
+            placeholder="Senha"
+          />
+          <input
+            type="password"
+            name="test_password"
+            id="test_password"
+            placeholder="Confirmar senha"
+          />
+          <input
+            type="text"
+            name="endereco"
+            id="endereco"
+            placeholder="Endereço"
+          />
+          <input type="text" name="cep" id="cep" placeholder="CEP" />
+          <button type="submit" class="btn-primary">Criar Conta</button>
+        </form>
+      </div>
+      <div>
+        <button id="toggle_btn" class="btn_toggle"></button>
+      </div>
+    </main>
+    <aside class="aside" id="login">
+      <div class="loginDiv">
+        <h2>Já possui conta?</h2>
+        <p>Para se manter conectado, entre com sua conta</p>
+        <button style="margin-top: 15px" class="btn-secondary">
+          Faça login
+        </button>
+      </div>
+    </aside>
+  </body>
 </html>

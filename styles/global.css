@@ -50,8 +50,8 @@ h1 {
 }
 
 h2 {
-  font-weight: 400;
-  font-size: 50px;
+  font-weight: 700;
+  font-size: 45px;
   text-align: center;
 }
 
@@ -80,20 +80,10 @@ p {
 .dark_mode .btn-primary {
   background: var(--color-background-btn-dark);
   color: var(--color-letter);
-  width: 300px;
-  height: 45px;
-  border-radius: 10px;
-  border: none;
-  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.3);
-  font-weight: 400;
-  font-size: 16px;
-  line-height: 20px;
-  text-align: center;
-  text-transform: capitalize;
 }
 
 input {
-  width: 300px;
+  width: 410px;
   height: 42.93px;
   background: var(--color-background-input);
   border-radius: 10px;
@@ -101,21 +91,17 @@ input {
   font-weight: 400;
   font-size: 14px;
   line-height: 20px;
-  color: var(--color-input-text);
-  padding-left: 15px;
+  margin-bottom: 20px;
+  margin-right: 10px;
+  padding-left: 10px;
+}
+
+input::placeholder{
+  color: var(--color-letter);
 }
 
 .dark_mode input {
-  width: 300px;
-  height: 42.93px;
   background: var(--color-background-input-dark);
-  border-radius: 10px;
-  border: none;
-  font-weight: 400;
-  font-size: 14px;
-  line-height: 20px;
-  color: var(--color-input-text);
-  padding-left: 15px;
 }
 
 .aside {
@@ -127,25 +113,26 @@ input {
 }
 
 .btn-secondary {
-  width: 300px;
+  width: 400px;
   height: 45px;
-  border: 2px solid var(--color-background-input);
+  border: 3px solid var(--color-background-input);
   filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.3));
   border-radius: 10px;
+  font-size: 18px;
+  font-weight: 600;
+  background: transparent;
+  cursor: pointer;
+  color: var(--color-letter);
 }
 
 .dark_mode .btn-secondary {
-  width: 300px;
-  height: 45px;
-  border: 2px solid var(--color-background-input-dark);
+   border: 3px solid var(--color-background-input-dark);
   filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.3));
-  border-radius: 10px;
+
 }
 
-.icon{
-    color: var(--color-nav_aside);
+.icone{
+     filter: invert(100%) sepia(0%) saturate(0%) hue-rotate(0deg) brightness(100%) contrast(100%);
 }
 
-.dark_mode .icon{
-    color: var(--color-nav_aside-dark);
-}
+
