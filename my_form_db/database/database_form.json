@@ -1,0 +1,12 @@
+[
+    {
+        "name": "teste",
+        "secund_name": "test_secund_name",
+        "email": "teste@teste.com",
+        "telephone": "teste@teste.com",
+        "password": "test-password",
+        "password_confirmation": "test-password",
+        "address":"teste-address",
+        "cep": "58954254"
+    }
+]

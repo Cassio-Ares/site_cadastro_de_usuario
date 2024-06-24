@@ -1,3 +1,5 @@
+@import url("./global.css");
+
 body {
   display: grid;
   grid-template-columns: 65% 35%;
@@ -14,32 +16,45 @@ body {
   justify-content: center;
 }
 
-#icons_container *{
+#icons_container * {
   margin: 0 15px;
 }
 
-#div_main_form{
- display: flex;
- flex-direction: column;
- width: 80%;
- margin: auto;
- align-items: center;
- justify-content: center;
- text-align: center;
+#div_main_form {
+  display: flex;
+  flex-direction: column;
+  width: 80%;
+  margin: auto;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
 }
 
-.btn_toggle{
+form {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+}
+
+.btn_toggle {
   width: 50px;
   height: 50px;
   position: absolute;
   left: 20px;
   bottom: 20px;
   background: url();
-
 }
 
-.dark_mode .btn_toggle{
+.dark_mode .btn_toggle {
   color: aliceblue;
 }
 
-
+.fa-solid {
+  color: var(--color-letter);
+  position: absolute;
+  margin-top: 15px;
+  margin-left: 380px;
+  z-index: 2;
+}
