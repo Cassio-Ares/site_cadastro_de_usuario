@@ -20,6 +20,7 @@
     <link rel="stylesheet" href="./styles/cadastro.css" />
 
     <script src="./js/darkMode.js"></script>
+    <script src="./js/validation_cadast.js"></script>
     <!-- <script src="./js/eye_password.js"></script> -->
     <title>Cadastro</title>
   </head>
@@ -93,11 +94,14 @@
             placeholder="Endereço"
           />
           <input type="text" name="cep" id="cep" placeholder="CEP" />
-          <button type="submit" class="btn-primary">Criar Conta</button>
+          <button type="submit" class="btn-primary" id="submit">Criar Conta</button>
         </form>
       </div>
-      <div>
-        <button id="toggle_btn" class="btn_toggle"></button>
+      <div class="btn_t">
+        <button id="toggle_btn" class="btn_toggle"> 
+          <i class="fa-regular fa-sun"></i>
+          <!-- <i class="fa-regular fa-moon"></i> -->
+      </button>
       </div>
     </main>
     <aside class="aside" id="login">
