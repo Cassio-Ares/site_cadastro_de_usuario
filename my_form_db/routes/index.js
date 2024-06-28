@@ -56,4 +56,25 @@ router.post("/cadastro", (req, res) => {
 
 });
 
+
+router.post('/login', (req, res) => {
+  const { email, password } =req.body;
+
+  const file = fs.readFileSync("./database/database_form.json");
+
+  const object = JSON.parse(file);
+
+  const user = object.find((data)=> data.email === email);
+
+  if(!user){
+    return res.status(400).send("Email ou senha invalida");
+  }
+  else if(!bcrypt.compareSync(password, user.password)){
+    return res.status(400).send("Email ou senha invalida");
+  }
+  else{
+    return res.status(200).send(user)
+  }
+});
+
 module.exports = router;
