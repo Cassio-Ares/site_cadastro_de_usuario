@@ -1,10 +1,10 @@
 window.addEventListener("load", () => {
   document.getElementById("submit").addEventListener("click", (event) => {
-   event.preventDefault();
+    event.preventDefault();
 
     const name = document.querySelector("input[name= name]").value;
-    const secund_name = document.querySelector(
-      "input[name= secund_name]"
+    const second_name = document.querySelector(
+      "input[name= second_name]"
     ).value;
     const email = document.querySelector("input[name= email]").value;
     const telephone = document.querySelector("input[name= telephone]").value;
@@ -24,7 +24,7 @@ window.addEventListener("load", () => {
 
     if (name.length === 0) {
       alert("O nome é obrigatorio");
-    } else if (secund_name.length === 0) {
+    } else if (second_name.length === 0) {
       alert("O sobrenome é obrigatorio");
     } else if (email.length === 0 || email.indexOf("@") === -1) {
       alert("Verifique se preencheu o e-mail corretamente");
@@ -46,7 +46,23 @@ window.addEventListener("load", () => {
     } else if (!cep.match(cepReg)) {
       alert("Verifique se seu cep esta correto");
     } else {
-      alert("ok");
+
+      fetch("http://localhost:3000/cadastro", {
+        method: "POST",
+        headers: {"Content-Type": "application/json"},
+        body: JSON.stringify({
+            name: name,
+            second_name: second_name,
+            email: email,
+            telephone: telephone,
+            password: password,
+            address: address,
+            cep: cep, 
+
+        })
+      }).then(()=>{
+        alert('Parabens por se cadastra, aproveite e vá para pagina de login')
+      }).catch(); //to do
     }
   });
 });
