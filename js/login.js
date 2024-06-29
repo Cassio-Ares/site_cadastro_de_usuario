@@ -20,6 +20,18 @@ window.addEventListener("load", () => {
       } else {
         response.json().then((response) => {
           alert(`olá ${response.name}`);
+          const storageData ={
+            id: response.id,
+            name: response.name
+          }
+
+          if(document.getElementById("lembre").checked){
+            localStorage.setItem("User", JSON.stringify(storageData));
+            //salva dados permanentamente no navegador (até que sejam limpos os caches )
+          }else{
+            sessionStorage.setItem("User", JSON.stringify(storageData));
+            //salva dados no navegador enquanto o navagador esta aberto 
+          }
         });
       }
     });
