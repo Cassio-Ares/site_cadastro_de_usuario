@@ -38,30 +38,6 @@ form {
   justify-content: center;
 }
 
-.btn_t{
-  position: relative;
-}
-
-.btn_toggle {
-  position: relative;
-  width: 50px;
-  height: 50px;
-  left: 20px;
-  bottom: 20px;
-  border: none;
-  background: transparent;
-}
-
-.fa-regular{
-  font-size: 40px;
-  box-shadow: 2px 0 10px rgba(226, 205, 17, 0.3);
-  border-radius: 50%;
-}
-
-.dark_mode .btn_toggle {
-  color: aliceblue;
-}
-
 .fa-solid {
   color: var(--color-letter);
   position: absolute;

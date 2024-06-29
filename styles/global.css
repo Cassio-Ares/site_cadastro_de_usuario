@@ -75,6 +75,7 @@ p {
   line-height: 20px;
   text-align: center;
   text-transform: capitalize;
+  cursor: pointer;
 }
 
 .dark_mode .btn-primary {
@@ -136,3 +137,42 @@ input::placeholder{
 }
 
 
+/* css toggle */
+
+.btn_t {
+  position: relative;
+}
+
+.btn_toggle {
+  position: relative;
+  width: 50px;
+  height: 50px;
+  left: 20px;
+  bottom: 20px;
+  border: none;
+  background: transparent;
+   cursor: pointer;
+}
+
+.fa-regular {
+  font-size: 40px;
+  box-shadow: 2px 0 10px rgba(226, 205, 17, 0.3);
+  border-radius: 50%;
+}
+
+.dark_mode .btn_toggle {
+  color: aliceblue;
+}
+
+
+.nav{
+  background: var(--color-nav_aside);
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.dark_mode .nav{
+  background: var(--color-nav_aside-dark);
+}

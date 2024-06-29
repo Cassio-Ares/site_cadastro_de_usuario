@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <script
+      src="https://kit.fontawesome.com/a1e8551cc2.js"
+      crossorigin="anonymous"
+    ></script>
+
+    <link rel="stylesheet" href="./styles/global.css" />
+    <link rel="stylesheet" href="./styles/home.css" />
+
+    <script src="./js/home.js"></script>
+    <script src="./js/darkMode.js"></script>
+    <title>Document</title>
+  </head>
+  <body class="dark_mode">
+    <header class="nav">
+      <form>
+        <input type="search" name="search" id="input" />
+        <button type="submit" id="search"><i class="fa-solid fa-magnifying-glass"></i></button>
+      </form>
+      <i class="fa-solid fa-user iconsNav"></i>
+      <i class="fa-solid fa-cart-shopping iconsNav"></i>
+    </header>
+    <main id="main">
+      <h1>Bem Vindo, <span id="userName">Name do user</span></h1>
+      <div id="container_home">
+        <p>Teremos uma <strong>palestra em Porto Alegre dia 26 de Agosto</strong></p>
+        <p><strong>Aproveite essa oportunidade</strong> e adquira já seu ingresso.</p>
+      </div>
+      <button class="btn-primary">Adquirir Ingressos</button>
+      <a href="#" target="_blank" >Continuar Para o site</a>
+    </main>
+    <footer>
+      <div class="btn_t">
+        <button id="toggle_btn" class="btn_toggle">
+          <i class="fa-regular fa-sun"></i>
+        </button>
+      </div>
+    </footer>
+  </body>
+</html>

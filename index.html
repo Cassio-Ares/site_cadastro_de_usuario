@@ -108,7 +108,7 @@
       <div class="loginDiv">
         <h2>Já possui conta?</h2>
         <p>Para se manter conectado, entre com sua conta</p>
-        <button style="margin-top: 15px" class="btn-secondary">
+        <button onclick="log()" style="margin-top: 15px" class="btn-secondary">
           Faça login
         </button>
       </div>
@@ -123,5 +123,9 @@
 
       idInput.type === 'password' ? idInput.type = 'text' : idInput.type = 'password';
     };
+
+    const log = () =>{
+      location.href = 'login.html';
+    }
   </script>
 </html>

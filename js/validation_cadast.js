@@ -61,7 +61,7 @@ window.addEventListener("load", () => {
 
         })
       }).then(()=>{
-        alert('Parabens por se cadastra, aproveite e vá para pagina de login')
+        location.href = '/home.html';
       }).catch(); //to do
     }
   });
