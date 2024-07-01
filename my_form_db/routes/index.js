@@ -77,4 +77,14 @@ router.post('/login', (req, res) => {
   }
 });
 
+
+router.get('/events', (_, res)=>{
+  const file = fs.readFileSync("./database/database_events.json")
+
+  const object = JSON.parse(file);
+
+  return res.status(200).send(object)
+})
+
+
 module.exports = router;

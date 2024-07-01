@@ -10,4 +10,13 @@ window.addEventListener("load", () => {
 
   location.href = '/login.html';
   }
+
+
+
+  document.getElementById("user").addEventListener("click", () => {
+    localStorage.removeItem("User");
+    sessionStorage.removeItem("User")
+
+    location.href = '/login.html';
+  });
 });

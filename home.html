@@ -14,6 +14,7 @@
 
     <script src="./js/home.js"></script>
     <script src="./js/darkMode.js"></script>
+    <script src="./js/search.js"></script>
     <title>Document</title>
   </head>
   <body class="dark_mode">
@@ -22,13 +23,13 @@
         <input type="search" name="search" id="input" />
         <button type="submit" id="search"><i class="fa-solid fa-magnifying-glass"></i></button>
       </form>
-      <i class="fa-solid fa-user iconsNav"></i>
+      <i class="fa-solid fa-user iconsNav" id="user"></i>
       <i class="fa-solid fa-cart-shopping iconsNav"></i>
     </header>
     <main id="main">
       <h1>Bem Vindo, <span id="userName">Name do user</span></h1>
       <div id="container_home">
-        <p>Teremos uma <strong>palestra em Porto Alegre dia 26 de Agosto</strong></p>
+        <p>Teremos uma palestra em <strong id="city"> Porto Alegre </strong> dia <strong id="date">26 de Agosto</strong></p>
         <p><strong>Aproveite essa oportunidade</strong> e adquira já seu ingresso.</p>
       </div>
       <button class="btn-primary">Adquirir Ingressos</button>

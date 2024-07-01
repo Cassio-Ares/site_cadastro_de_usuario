@@ -1,0 +1,22 @@
+[
+    {
+        "city": "São Paulo",
+        "date": "30/08/2024"
+    },
+    {
+        "city": "Belo Horizonte",
+        "date": "23/09/2024"
+    },
+    {
+        "city": "Rio de Janeiro",
+        "date":  "15/10/2024"
+    },
+    {
+        "city": "Salvador",
+        "date": "22/11/2024"
+    },
+    {
+        "city": "Porto Alegre",
+        "date": "15/12/2024"
+    }
+]
